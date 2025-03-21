@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+</head>
+<body>
+    <h1>Se connecter</h1>
+    <form id="loginForm">
+        <input type="text" id="username" placeholder="Nom d'utilisateur" required><br>
+        <input type="password" id="password" placeholder="Mot de passe" required><br>
+        <select id="role" required>
+            <option value="eleve">Élève</option>
+            <option value="professeur">Professeur</option>
+            <option value="vie_scolaire">Vie Scolaire</option>
+            <option value="direction">Direction</option>
+        </select><br>
+        <input type="checkbox" id="rememberMe"> Se souvenir de moi<br>
+        <button type="button" onclick="connect()">Se connecter</button>
+    </form>
+    <p id="restrictedMessage" style="display: none; color: red;">Identifiants incorrects ou rôle non autorisé.</p>
+    <script src="login.js"></script>
+</body>
+</html>
+
